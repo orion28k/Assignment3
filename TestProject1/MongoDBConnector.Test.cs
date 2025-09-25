@@ -17,4 +17,17 @@ public class MongoDBConnectorTest
         // Assert: verify the outcome
         Assert.True(result);
     }
+    
+    [Fact]
+    public void Test2()
+    {
+        // Arrange: create the connector
+        var connector = new MongoDBConnector("name");
+
+        // Act: call the method under test
+        var result = connector.PingMongoDB();
+
+        // Assert: verify the outcome
+        Assert.False(result);
+    }
 }
