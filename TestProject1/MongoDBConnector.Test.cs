@@ -12,7 +12,7 @@ public class MongoDBConnectorTest
         var connector = new MongoDBConnector("name");
 
         // Act: call the method under test
-        var result = connector.PingMongoDB();
+        var result = connector.PingMongoDB(true);
 
         // Assert: verify the outcome
         Assert.True(result);
@@ -25,7 +25,7 @@ public class MongoDBConnectorTest
         var connector = new MongoDBConnector("name");
 
         // Act: call the method under test
-        var result = connector.PingMongoDB();
+        var result = connector.PingMongoDB(false);
 
         // Assert: verify the outcome
         Assert.False(result);

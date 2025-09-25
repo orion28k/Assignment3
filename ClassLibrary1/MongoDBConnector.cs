@@ -9,10 +9,8 @@ public class MongoDBConnector
 
     }
 
-    public bool PingMongoDB()
+    public bool PingMongoDB(bool result)
     {
-        bool success = true; 
-         
-        return success;
+        return result;
     }
 }
